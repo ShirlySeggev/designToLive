@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Design to Live</title>
+</head>
+
+<body>
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <header class="main-header">
+        <div class="main-details container flex space-between align-center">
+            <div class="logo">Blogin<span>.</span></div>
+            <div class="main-nav flex justify-content align-center clean-list">
+                <div class="dropdown">
+                    <a class="dropbtn btn-nav active">Journal</a>
+                    <div class="dropdown-content">
+                        <a href="#">October 2016</a>
+                        <a href="#">January 2017</a>
+                        <a href="#">April 2017</a>
+                        <a href="#">July 2017</a>
+                    </div>
+                </div>
+                <a class="btn-nav" href="#">About</a>
+                <a class="btn-nav" href="#">Work</a>
+                <a class="btn-nav" href="#">Contact</a>
+
+            </div>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <main class="main-content container">
+
+        <div class="card-container flex">
+            <img class="card-image" src="./images/001.jpg" alt="">
+            <div class="info-container flex">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="btn-round card-button" onclick="continueReading('1')">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card-container flex">
+            <img class="card-image" src="./images/002.jpg" alt="">
+            <div class="info-container flex">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="btn-round card-button" onclick="continueReading('2')">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card-container flex">
+            <img class="card-image" src="./images/003.jpg" alt="">
+            <div class="info-container flex">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="btn-round card-button" onclick="continueReading('3')">Continue Reading</button>
+            </div>
+        </div>
+
+
+        <section class="post-navigation">
+            <ul class="flex container space-between align-center clean-list">
+                <li class="post-button"><a href="#"><span>←</span>Previus</a></li>
+                <li class="post-button"><a href="#">Next<span>→</span></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <footer class="main-footer flex">
+        <div class="footer-container flex align-center">
+            <div class="logo footer">Blogin<span>.</span></div>
+            <div class="terms">© 2014 Blogin.com - All Rights Reserved -Find more free Templetes at
+                <span>Pixelhint.com</span>
+            </div>
+            <div class="social-container social-nav flex">
+                <a class="fa facebook" href="#"></a>
+                <a class="fa twitter" href="#"></a>
+                <a class="fa behance" href="#"></a>
+                <a class="fa dribbble" href="#"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-conatiner flex"></div>
+        <div class="modal-data flex space-center align-center">
+            <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <h3>Join us to get access to the latest stories!</h3>
+            <form onsubmit="onAddBook(event)">
+                <label for="email">Your Mail</label>
+                <input type="email" name="mail" id="mail" placeholder="Type the mail here">
+                <button class="btn-round" type="submit">Submit</button>
+            </form>
+            <button class="btn-round" onclick="onCloseModal()">Close</button>
+        </div>
+        <!-- </div> -->
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
